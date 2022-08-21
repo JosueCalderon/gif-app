@@ -9,14 +9,16 @@ export const GifExpertApp = () => {
 
         if (categories.includes(value)) return;
 
-        setCategories([...categories, value]);
+        setCategories([value]);
 
     }
 
     return (
 
         <>
-            <div>GifExpertApp</div>
+            <div className='title-div'>
+                <h1>Gif Explorer</h1>
+            </div>
 
             <AddCategory onAddCategory={(value) => onAddCategory(value)} />
 
